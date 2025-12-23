@@ -11,8 +11,8 @@ import java.util.List;
 @Controller
 public class HelloController {
 
-	@GetMapping(value = "/")
-	public String printWelcome(ModelMap model) {
+	@GetMapping(value = "/")  // URL приходящий в метод котроллера
+	public String printWelcome(ModelMap model) { // возвращает необходимое представление, тут мы можем перенаправлять пользователя, обращаться к модели, доставать данные из БД, показывать данные пользователю и т.д.
 		List<String> messages = new ArrayList<>();
 		messages.add("Hello!");
 		messages.add("I'm Spring MVC application");
